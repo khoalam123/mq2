@@ -37,7 +37,7 @@ Blockly.Blocks['mq2_sensor'] = {
   
 };
 
-Blockly.Python['citybit_mq3_sensor'] = function(block) {
+Blockly.Python['mq2_sensor'] = function(block) {
   var dropdown_name = block.getFieldValue('NAME');
   Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
 
