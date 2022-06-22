@@ -1,5 +1,5 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category name="CITY:BIT" colour="#6c42bf" icon="building">
-   <block type="citybit_mq3_sensor"/>
+   <block type="mq2_sensor"/>
   </category>
 </xml>

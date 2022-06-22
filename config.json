@@ -1,6 +1,6 @@
 {
     "name": "CITY:BIT",
-    "description": "Mục mở rộng dành cho bộ kit Thành phố thông minh",
+    "description": "Cam bien MQ2",
     "libs": [
         "MQ2.py","BaseMQ.py"
     ],

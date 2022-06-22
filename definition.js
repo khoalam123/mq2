@@ -1,8 +1,8 @@
-Blockly.Blocks['citybit_mq3_sensor'] = {
+Blockly.Blocks['mq2_sensor'] = {
   init: function() {
     this.jsonInit(
       {
-        "type": "citybit_mq3_sensor",
+        "type": "mq2_sensor",
         "message0": "đọc cảm biến đo khí ga %1",
         "args0": [
           {
@@ -32,7 +32,7 @@ Blockly.Blocks['citybit_mq3_sensor'] = {
     );
   },
   getDeveloperVars: function() {
-    return ['mq135_citybit'];
+    return ['mq2'];
   }
   
 };
@@ -40,11 +40,11 @@ Blockly.Blocks['citybit_mq3_sensor'] = {
 Blockly.Python['citybit_mq3_sensor'] = function(block) {
   var dropdown_name = block.getFieldValue('NAME');
   Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
-  Blockly.Python.definitions_['import_i2c'] = 'from machine import Pin';
-  Blockly.Python.definitions_['import_mq3'] = 'from citybit_mq3 import MQ3';
-  Blockly.Python.definitions_["import_create_mq3"] = 'mq3_citybit = MQ3(Pin(' + dropdown_name + '.adc_pin)) # analog PIN';
+
+  Blockly.Python.definitions_['import_mq2'] = 'from MQ2 import MQ2';
+  Blockly.Python.definitions_["import_create_mq2"] = 'mq2 = MQ2(Pin(' + dropdown_name + '.adc_pin)) # analog PIN';
   // TODO: Assemble Python into code variable.
-  var code = 'mq3_citybit.get_ppm()';
+  var code = 'mq2.readLPG()';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.Python.ORDER_NONE];
 };
