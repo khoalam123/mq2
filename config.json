@@ -2,7 +2,7 @@
     "name": "CITY:BIT",
     "description": "Mục mở rộng dành cho bộ kit Thành phố thông minh",
     "libs": [
-        "citybit_dht20.py", "citybit_ssd1306.py", "citybit_hcsr04.py", "citybit_mq135.py"
+        "MQ2.py","BaseMQ.py"
     ],
     "blocks": [
         "definition.js"
@@ -11,6 +11,6 @@
     "languages": {
         "en": "languages/en.js",
         "vi": "languages/vi.js"
-    },
-    "poster": "poster.png"
+    }
+    
 }
